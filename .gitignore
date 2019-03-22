@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/JTF-Memory-AspNet/bin
+/JTF-Memory-AspNet/obj/Debug
+/packages
+/JTF-Memory-AspNet.sln.DotSettings.user
