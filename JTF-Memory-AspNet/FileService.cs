@@ -16,7 +16,7 @@ namespace JTF_Memory_AspNet
 
         internal Stream Download()
         {
-            var response = this._httpService.Get("https://raw.githubusercontent.com/Alachisoft/NCache/master/Src/NCWebCache/Web/Caching/Cache.cs");
+            var response = this._httpService.Get("https://raw.githubusercontent.com/gregpakes/JTF-Memory-AspNet/master/JTF-Memory-AspNet/LargeTextFile.txt");
             return response.Content.ReadAsStreamAsync().Result;
         }
 
@@ -28,7 +28,7 @@ namespace JTF_Memory_AspNet
 
         private async Task<Stream> DownloadAsync()
         {
-            var response = await this._httpService.GetAsync("https://raw.githubusercontent.com/Alachisoft/NCache/master/Src/NCWebCache/Web/Caching/Cache.cs");
+            var response = await this._httpService.GetAsync("https://raw.githubusercontent.com/gregpakes/JTF-Memory-AspNet/master/JTF-Memory-AspNet/LargeTextFile.txt");
             return await response.Content.ReadAsStreamAsync();
         }
 
